@@ -11,28 +11,36 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="800.0" prefWidth="600.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="com.example.musicplayer.Controller">
+<VBox prefHeight="800.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.musicplayer.Controller">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="300.0">
+   <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="580.0">
       <children>
-         <Label id="nowPlayingLabel" fx:id="nowPlayingLabel" text="Now Playing: ">
+         <Label id="nowPlayingLabel" fx:id="nowPlayingLabel" prefHeight="30.0" prefWidth="130.0" text="Now Playing: ">
             <font>
-               <Font name="System Bold" size="12.0" />
+               <Font name="System Bold" size="18.0" />
             </font>
          </Label>
-         <Label id="songPlayingLabel" fx:id="songPlayingLabel" text="Song Playing" />
+         <Label id="songPlayingLabel" fx:id="songPlayingLabel" prefHeight="17.0" prefWidth="434.0" text="Song Playing">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
       </children>
    </HBox>
-   <HBox prefHeight="20.0" prefWidth="300.0">
+   <HBox prefHeight="30.0" prefWidth="580.0">
       <children>
-         <Label id="nextUpLabel" fx:id="nextUpLabel" text="Next up: ">
+         <Label id="nextUpLabel" fx:id="nextUpLabel" prefHeight="30.0" prefWidth="130.0" text="Next up: ">
             <font>
-               <Font name="System Bold" size="12.0" />
+               <Font name="System Bold" size="18.0" />
             </font>
          </Label>
-         <Label id="nextSongLabel" fx:id="nextSongLabel" text="Next Song" />
+         <Label id="nextSongLabel" fx:id="nextSongLabel" prefHeight="17.0" prefWidth="434.0" text="Next Song">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
       </children>
    </HBox>
    <TableView fx:id="table" prefHeight="529.0" prefWidth="560.0">
@@ -40,26 +48,56 @@
        <TableColumn fx:id="titleColumn" prefWidth="485.0" text="Title" />
        <TableColumn fx:id="lengthColumn" prefWidth="74.0" text="Length" />
      </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
    </TableView>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
       <children>
-         <Button id="previousButton" fx:id="previousButton" mnemonicParsing="false" text="Previous" />
-         <Button id="playPauseButton" fx:id="playPauseButton" mnemonicParsing="false" text="Pause" />
-         <Button id="nextButton" fx:id="nextButton" mnemonicParsing="false" text="Next" />
+         <Button id="previousButton" fx:id="previousButton" mnemonicParsing="false" prefWidth="115.0" text="Previous">
+            <font>
+               <Font size="14.0" />
+            </font></Button>
+         <Button id="playPauseButton" fx:id="playPauseButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Pause">
+            <HBox.margin>
+               <Insets left="8.0" right="8.0" />
+            </HBox.margin>
+            <font>
+               <Font size="14.0" />
+            </font></Button>
+         <Button id="nextButton" fx:id="nextButton" mnemonicParsing="false" prefWidth="115.0" text="Next">
+            <font>
+               <Font size="14.0" />
+            </font></Button>
       </children>
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
       <children>
-         <Button id="loopButton" fx:id="loopButton" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Loop: OFF" />
-         <Pane id="spacer" fx:id="spacer" prefHeight="49.0" prefWidth="445.0" />
-         <Button id="shuffleButton" fx:id="shuffleButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Shuffle" />
+         <Button id="loopButton" fx:id="loopButton" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Loop: OFF">
+            <font>
+               <Font size="16.0" />
+            </font></Button>
+         <Pane id="spacer" fx:id="spacer" prefHeight="44.0" prefWidth="327.0" />
+         <Button id="shuffleButton" fx:id="shuffleButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Shuffle">
+            <font>
+               <Font size="16.0" />
+            </font></Button>
       </children>
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
       <children>
-         <Label id="timeElapsedLabel" fx:id="timeElapsedLabel" text="00:00" />
-         <Slider fx:id="slider" prefHeight="14.0" prefWidth="488.0" />
-         <Label id="timeRemainingLabel" fx:id="timeRemainingLabel" text="00:48" />
+         <Label id="timeElapsedLabel" fx:id="timeElapsedLabel" text="00:00">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Slider fx:id="slider" prefHeight="14.0" prefWidth="466.0">
+            <HBox.margin>
+               <Insets left="8.0" right="8.0" />
+            </HBox.margin></Slider>
+         <Label id="timeRemainingLabel" fx:id="timeRemainingLabel" text="00:48">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
       </children>
    </HBox>
 </VBox>

@@ -86,6 +86,7 @@ public class Controller implements Initializable {
         titleColumn.setCellValueFactory(new PropertyValueFactory<Song, String>("title"));
         lengthColumn.setCellValueFactory(new PropertyValueFactory<Song, String>("length"));
         table.setItems(Songs);
+        table.getStylesheets().add(getClass().getResource("/modena.css").toExternalForm());
 
         table.setOnMouseClicked((mouseEvent -> {
 
