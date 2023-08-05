@@ -3,7 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.HBox?>
@@ -44,25 +44,22 @@
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
       <children>
          <Button id="previousButton" fx:id="previousButton" mnemonicParsing="false" text="Previous" />
-         <Button id="playPauseButton" fx:id="playPauseButton" mnemonicParsing="false" text="PlayPause" />
+         <Button id="playPauseButton" fx:id="playPauseButton" mnemonicParsing="false" text="Pause" />
          <Button id="nextButton" fx:id="nextButton" mnemonicParsing="false" text="Next" />
       </children>
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
       <children>
-         <Button id="loopButton" fx:id="loopButton" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" text="Loop" />
-         <Pane id="spacer" fx:id="spacer" prefHeight="100.0" prefWidth="449.0" />
-         <Button id="shuffleButton" fx:id="shuffleButton" mnemonicParsing="false" text="Shuffle" />
+         <Button id="loopButton" fx:id="loopButton" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Loop: OFF" />
+         <Pane id="spacer" fx:id="spacer" prefHeight="49.0" prefWidth="445.0" />
+         <Button id="shuffleButton" fx:id="shuffleButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Shuffle" />
       </children>
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
       <children>
          <Label id="timeElapsedLabel" fx:id="timeElapsedLabel" text="00:00" />
-         <ProgressBar id="progressBar" fx:id="progressBar" prefHeight="18.0" prefWidth="480.0" progress="0.0" />
+         <Slider fx:id="slider" prefHeight="14.0" prefWidth="488.0" />
          <Label id="timeRemainingLabel" fx:id="timeRemainingLabel" text="00:48" />
       </children>
    </HBox>
-
-          <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" text="Hello!" />
 </VBox>

@@ -9,7 +9,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
 import java.net.URL;
+import javafx.util.Duration;
 import java.util.*;
+import java.util.stream.Collectors;
 
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.media.Media;
@@ -42,10 +44,30 @@ public class Controller implements Initializable {
     private Button playPauseButton;
     @FXML
     private Button previousButton;
+    @FXML
+    private Button nextButton;
+    @FXML
+    private Button loopButton;
+    @FXML
+    private Button shuffleButton;
+    @FXML
+    private Label timeElapsedLabel;
+    @FXML
+    private Label timeRemainingLabel;
+    @FXML
+    private Slider slider;
 
     MediaPlayer player;
     private final Logger logger = LoggerFactory.getLogger(getClass());
     private boolean isPlaying = true;
+    private Song currentlyPlaying;
+    private boolean isLooping = false;
+
+    // get all songs
+    LinkedHashMap<String, Song> allSongs = new SongRepository().fetchData();
+//    List<Song> songsList = allSongs.values().stream().toList();
+//    ArrayList<Song> songsList = allSongs.values().stream().collect(Collectors.toCollection(ArrayList::new));
+    ArrayList<Song> songsList = new ArrayList<>(allSongs.values());
 
     @FXML
     protected void onHelloButtonClick() {
@@ -57,11 +79,7 @@ public class Controller implements Initializable {
 
         logger.info("Starting the program...");
 
-        // get all songs
-        LinkedHashMap<String, Song> allSongs = new SongRepository().fetchData();
-
         // initialize table view
-        List<Song> songsList = allSongs.values().stream().toList();
         ObservableList<Song> Songs = FXCollections.observableArrayList();
         Songs.addAll(songsList);
 
@@ -75,15 +93,10 @@ public class Controller implements Initializable {
             Song selectedSong = table.getSelectionModel().getSelectedItem();
 
             if (selectedSong != null) {
-                player.stop();
-
-                String mediaURI = selectedSong.getTitleURI();
-                player = new MediaPlayer( new Media(mediaURI));
-                player.play();
                 logger.info("clicked on: " + selectedSong.getTitle());
-                logger.info("playing: " + selectedSong.getTitle());
 
-                songPlayingLabel.setText(selectedSong.getTitle());
+                player.stop();
+                playMedia(selectedSong);
             }
         }));
 
@@ -93,37 +106,134 @@ public class Controller implements Initializable {
 //        String uriString = Path.of("src/main/resources/Kato-Unravel.mp3").toUri().toString();
 //        String uriString = Path.of("Kato-Unravel.mp3").toUri().toString();
 
-        Song firstSong = allSongs.values().stream().findFirst().orElse(null);
-        String uriString = Objects.requireNonNull(firstSong).getTitleURI();
-        logger.info("Playing 1st song: " + firstSong.getTitle());
-        player = new MediaPlayer( new Media(uriString));
-        player.play();
-
-        songPlayingLabel.setText(firstSong.getTitle());
-        nextSongLabel.setText(songsList.get(songsList.indexOf(firstSong) + 1).getTitle());
-        logger.info("first song index: " + songsList.indexOf(firstSong));
-
+        currentlyPlaying  = allSongs.values().stream().findFirst().orElse(null);
+        playMedia(currentlyPlaying);
 
         playButton();
         previousButton();
+        nextButton();
+        loopButton();
+        shuffleButton();
+    }
+
+    private void playMedia(Song currentSong) {
+        currentlyPlaying  = currentSong;
+        String uriString = Objects.requireNonNull(currentlyPlaying).getTitleURI();
+
+        player = new MediaPlayer(new Media(uriString));
+        player.setAutoPlay(true);
+        player.setOnReady(() -> {
+            initialSlider();
+        });
+        player.currentTimeProperty().addListener((observableValue, duration, t1) -> {
+            if (!slider.isValueChanging()) {
+                double current = player.getCurrentTime().toSeconds();
+                slider.setValue(current);
+                timeElapsedLabel.setText(convertTime(current));
+                timeRemainingLabel.setText(convertTime(player.getMedia().getDuration().toSeconds() - current));
+            }
+        });
+        player.setOnEndOfMedia(()->{
+            if (!isLooping) {
+                player.dispose();
+
+                currentlyPlaying = (songsList.indexOf(currentlyPlaying) + 1 == songsList.size()) ? songsList.get(0): songsList.get(songsList.indexOf(currentlyPlaying) + 1);
+                updatePlayingLabel();
+
+                playMedia(currentlyPlaying);
+            }
+        });
+        player.play();
+        logger.info("Playing: " + currentlyPlaying.getTitle());
+        updatePlayingLabel();
+    }
+
+    private String convertTime(double second) {
+        int minutes = (int) (second/60);
+        int seconds = (int) (second%60);
+
+        return String.format("%02d:%02d",minutes,seconds);
+    }
+
+    private void initialSlider() {
+        logger.info("Initializing slider");
+        slider.setMin(0);
+        slider.setMax(player.getTotalDuration().toSeconds());
+
+        slider.valueProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+                if (slider.isValueChanging()) {
+                    logger.info("slider changed");
+                    int current = (int) slider.getValue();
+                    logger.info("value: " + current);
+                    player.seek(Duration.seconds(current));
+                    timeElapsedLabel.setText(convertTime(current));
+                    timeRemainingLabel.setText(convertTime(player.getMedia().getDuration().toSeconds() - current));
+                }
+            }
+        });
+    }
+
+    private void shuffleButton() {
+        shuffleButton.setOnMouseClicked((mouseEvent -> {
+            Collections.shuffle(songsList);
+
+            ObservableList<Song> Songs = FXCollections.observableArrayList();
+            Songs.addAll(songsList);
+
+            table.setItems(Songs);
+            updatePlayingLabel();
+        }));
+    }
+
+    private void loopButton() {
+        loopButton.setOnMouseClicked((mouseEvent -> {
+            logger.info("loop button clicked");
+
+            isLooping = !isLooping;
+            logger.info("isLooping: " + isLooping);
+
+            if (isLooping) {
+                player.setCycleCount(MediaPlayer.INDEFINITE);
+                loopButton.setText("Loop: ON");
+            } else {
+                loopButton.setText("Loop: OFF");
+            }
+        }));
+    }
+
+    private void nextButton() {
+        nextButton.setOnMouseClicked((mouseEvent -> {
+            logger.info("next button clicked");
+
+            currentlyPlaying = (songsList.indexOf(currentlyPlaying) + 1 == songsList.size()) ? songsList.get(0): songsList.get(songsList.indexOf(currentlyPlaying) + 1);
+            player.stop();
+            player.dispose();
+
+            playMedia(currentlyPlaying);
+        }));
     }
 
     private void previousButton() {
         previousButton.setOnMouseClicked((mouseEvent -> {
             logger.info("previous button clicked");
 
-
-            Song selectedSong = table.getSelectionModel().getSelectedItem();
-
+            currentlyPlaying = (songsList.indexOf(currentlyPlaying) - 1 < 0) ? songsList.get(songsList.size() - 1) : songsList.get(songsList.indexOf(currentlyPlaying) - 1);
             player.stop();
+            player.dispose();
 
-            String mediaURI = selectedSong.getTitleURI();
-            player = new MediaPlayer( new Media(mediaURI));
-            player.play();
-            logger.info("playing: " + selectedSong.getTitle());
-
-
+            playMedia(currentlyPlaying);
         }));
+    }
+
+    private void updatePlayingLabel() {
+        songPlayingLabel.setText(currentlyPlaying.getTitle());
+        int nextSongIndex = (songsList.indexOf(currentlyPlaying) + 1 == songsList.size()) ? 0 : songsList.indexOf(currentlyPlaying) + 1;
+        nextSongLabel.setText(songsList.get(nextSongIndex).getTitle());
+
+        logger.info("currently playing: " + currentlyPlaying.getTitle());
+        logger.info("next up: " + songsList.get(nextSongIndex).getTitle());
     }
 
     private void playButton() {
@@ -134,9 +244,12 @@ public class Controller implements Initializable {
 
             if (!isPlaying) {
                 player.pause();
+                playPauseButton.setText("Play");
+
                 logger.info("song is paused");
             } else {
                 player.play();
+                playPauseButton.setText("Pause");
                 logger.info("song is resumed");
             }
         }));
