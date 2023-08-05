@@ -1,0 +1,61 @@
+2023-08-05 19:32:46 INFO  Controller:62 - Starting the program...
+2023-08-05 19:34:23 INFO  Controller:62 - Starting the program...
+2023-08-05 19:34:24 INFO  Controller:100 - Playing 1st song: Kato - Unravel
+2023-08-05 19:34:45 INFO  Controller:62 - Starting the program...
+2023-08-05 19:34:45 INFO  Controller:100 - Playing 1st song: Kato - Gurenge
+2023-08-05 19:40:33 INFO  Controller:61 - Starting the program...
+2023-08-05 19:40:33 INFO  Controller:99 - Playing 1st song: Kato - Gurenge
+2023-08-05 19:40:35 INFO  Controller:108 - play/pause button clicked
+2023-08-05 19:40:36 INFO  Controller:108 - play/pause button clicked
+2023-08-05 19:40:37 INFO  Controller:108 - play/pause button clicked
+2023-08-05 19:44:45 INFO  Controller:62 - Starting the program...
+2023-08-05 19:44:45 INFO  Controller:100 - Playing 1st song: Kato - Gurenge
+2023-08-05 19:44:47 INFO  Controller:109 - play/pause button clicked
+2023-08-05 19:44:50 INFO  Controller:109 - play/pause button clicked
+2023-08-05 19:44:53 INFO  Controller:109 - play/pause button clicked
+2023-08-05 19:44:54 INFO  Controller:109 - play/pause button clicked
+2023-08-05 19:46:14 INFO  Controller:62 - Starting the program...
+2023-08-05 19:46:14 INFO  Controller:100 - Playing 1st song: Kato - Unravel
+2023-08-05 19:46:21 INFO  Controller:109 - play/pause button clicked
+2023-08-05 19:46:21 INFO  Controller:115 - song is paused
+2023-08-05 19:46:23 INFO  Controller:109 - play/pause button clicked
+2023-08-05 19:46:23 INFO  Controller:118 - song is resumed
+2023-08-05 19:46:26 INFO  Controller:109 - play/pause button clicked
+2023-08-05 19:46:26 INFO  Controller:115 - song is paused
+2023-08-05 19:46:27 INFO  Controller:109 - play/pause button clicked
+2023-08-05 19:46:27 INFO  Controller:118 - song is resumed
+2023-08-05 19:47:24 INFO  Controller:62 - Starting the program...
+2023-08-05 19:47:24 INFO  Controller:100 - Playing 1st song: Kato - Unravel
+2023-08-05 19:47:26 INFO  Controller:84 - clicked on: Kato - Gurenge
+2023-08-05 19:47:28 INFO  Controller:84 - clicked on: Kato - Unravel
+2023-08-05 19:47:30 INFO  Controller:84 - clicked on: Kato - Gurenge
+2023-08-05 19:47:30 INFO  Controller:84 - clicked on: Kato - Unravel
+2023-08-05 19:49:04 INFO  Controller:62 - Starting the program...
+2023-08-05 19:49:04 INFO  Controller:101 - Playing 1st song: Kato - Unravel
+2023-08-05 19:49:06 INFO  Controller:88 - clicked on: Kato - Gurenge
+2023-08-05 19:49:06 INFO  Controller:89 - playing: Kato - Gurenge
+2023-08-05 19:49:07 INFO  Controller:88 - clicked on: Kato - Unravel
+2023-08-05 19:49:07 INFO  Controller:89 - playing: Kato - Unravel
+2023-08-05 19:49:08 INFO  Controller:88 - clicked on: Kato - Gurenge
+2023-08-05 19:49:08 INFO  Controller:89 - playing: Kato - Gurenge
+2023-08-05 19:49:11 INFO  Controller:88 - clicked on: Kato - Gurenge
+2023-08-05 19:49:11 INFO  Controller:89 - playing: Kato - Gurenge
+2023-08-05 19:49:12 INFO  Controller:88 - clicked on: Kato - Unravel
+2023-08-05 19:49:12 INFO  Controller:89 - playing: Kato - Unravel
+2023-08-05 19:49:13 INFO  Controller:88 - clicked on: Kato - Gurenge
+2023-08-05 19:49:13 INFO  Controller:89 - playing: Kato - Gurenge
+2023-08-05 19:57:42 INFO  Controller:61 - Starting the program...
+2023-08-05 19:57:42 INFO  Controller:102 - Playing 1st song: Kato - Unravel
+2023-08-05 19:57:43 INFO  Controller:107 - first song index: 0
+2023-08-05 19:57:54 INFO  Controller:61 - Starting the program...
+2023-08-05 19:57:54 INFO  Controller:102 - Playing 1st song: Kato - Gurenge
+2023-08-05 19:57:54 INFO  Controller:107 - first song index: 0
+2023-08-05 20:04:44 INFO  Controller:58 - Starting the program...
+2023-08-05 20:04:44 INFO  Controller:98 - Playing 1st song: Kato - Unravel
+2023-08-05 20:04:44 INFO  Controller:103 - first song index: 0
+2023-08-05 20:04:50 INFO  Controller:58 - Starting the program...
+2023-08-05 20:04:50 INFO  Controller:98 - Playing 1st song: Kato - Unravel
+2023-08-05 20:04:50 INFO  Controller:103 - first song index: 0
+2023-08-05 20:07:43 INFO  Controller:58 - Starting the program...
+2023-08-05 20:07:43 INFO  Controller:98 - Playing 1st song: Kato - Unravel
+2023-08-05 20:07:43 INFO  Controller:104 - first song index: 0
