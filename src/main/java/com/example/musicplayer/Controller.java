@@ -61,7 +61,7 @@ public class Controller implements Initializable {
     private boolean isPlaying = true;
     private boolean isLooping = false;
 
-    // get all songs
+    // Get all songs
     ArrayList<Song> songsList = new SongRepository().fetchDataList();
 
     @Override
@@ -69,7 +69,7 @@ public class Controller implements Initializable {
 
         logger.info("Starting the program...");
 
-        // initialize table view
+        // Initialize table view
         ObservableList<Song> Songs = FXCollections.observableArrayList();
         Songs.addAll(songsList);
 
@@ -94,7 +94,7 @@ public class Controller implements Initializable {
     private void playMedia(Song currentSong) {
         currentlyPlayingSong = currentSong;
 
-        // setup media player
+        // Setup media player
         player = new MediaPlayer(new Media(currentlyPlayingSong.getTitleURI()));
         player.setAutoPlay(true);
         player.setOnReady(this::initializeSlider);
@@ -117,7 +117,7 @@ public class Controller implements Initializable {
             }
         });
 
-        // play the media
+        // Play the media
         player.play();
         logger.info("Playing: " + currentlyPlayingSong.getTitle());
         updateCurrentlyAndNextPlayingLabels();
@@ -133,11 +133,11 @@ public class Controller implements Initializable {
     private void initializeSlider() {
         logger.info("Initializing slider for: " + currentlyPlayingSong.getTitle());
 
-        // initialize min and max
+        // Initialize min and max
         slider.setMin(0);
         slider.setMax(player.getTotalDuration().toSeconds());
 
-        // initialize dragged property
+        // Initialize dragged property
         slider.valueProperty().addListener((observableValue, number, t1) -> {
             if (slider.isValueChanging()) {
                 logger.info("slider dragged");
@@ -149,7 +149,7 @@ public class Controller implements Initializable {
             }
         });
 
-        // initialize on click property
+        // Initialize on click property
         slider.setOnMouseClicked(mouseEvent -> {
             logger.info("slider clicked");
 
@@ -167,7 +167,7 @@ public class Controller implements Initializable {
     private void tableFunction() {
         Song selectedSong = table.getSelectionModel().getSelectedItem();
 
-        // check the clicked song is not null
+        // Check the clicked song is not null
         if (selectedSong != null) {
             logger.info("clicked on: " + selectedSong.getTitle());
             player.stop();
