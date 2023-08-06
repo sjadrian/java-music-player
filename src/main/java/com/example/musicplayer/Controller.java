@@ -170,8 +170,12 @@ public class Controller implements Initializable {
         // check the clicked song is not null
         if (selectedSong != null) {
             logger.info("clicked on: " + selectedSong.getTitle());
-
             player.stop();
+
+            if (!isPlaying) {
+                isPlaying = true;
+                playPauseImage.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream("icons/pause.png"))));
+            }
             playMedia(selectedSong);
         }
     }
@@ -207,6 +211,10 @@ public class Controller implements Initializable {
         player.stop();
         player.dispose();
 
+        if (!isPlaying) {
+            isPlaying = true;
+            playPauseImage.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream("icons/pause.png"))));
+        }
         playMedia(currentlyPlayingSong);
     }
 
@@ -217,6 +225,10 @@ public class Controller implements Initializable {
         player.stop();
         player.dispose();
 
+        if (!isPlaying) {
+            isPlaying = true;
+            playPauseImage.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream("icons/pause.png"))));
+        }
         playMedia(currentlyPlayingSong);
     }
 
@@ -233,7 +245,10 @@ public class Controller implements Initializable {
         logger.info("play/pause button clicked");
 
         isPlaying = !isPlaying;
+        checkPlaying();
+    }
 
+    private void checkPlaying() {
         if (!isPlaying) {
             player.pause();
             playPauseImage.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream("icons/play.png"))));
@@ -244,4 +259,5 @@ public class Controller implements Initializable {
             logger.info("song is resumed");
         }
     }
+
 }
