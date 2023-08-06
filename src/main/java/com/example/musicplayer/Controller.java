@@ -51,15 +51,13 @@ public class Controller implements Initializable {
     private Slider slider;
 
     private MediaPlayer player;
+    private Song currentlyPlayingSong;
     private final Logger logger = LoggerFactory.getLogger(getClass());
     private boolean isPlaying = true;
-    private Song currentlyPlayingSong;
     private boolean isLooping = false;
 
     // get all songs
     LinkedHashMap<String, Song> allSongs = new SongRepository().fetchData();
-//    List<Song> songsList = allSongs.values().stream().toList();
-//    ArrayList<Song> songsList = allSongs.values().stream().collect(Collectors.toCollection(ArrayList::new));
     ArrayList<Song> songsList = new ArrayList<>(allSongs.values());
 
     @Override
@@ -74,7 +72,7 @@ public class Controller implements Initializable {
         titleColumn.setCellValueFactory(new PropertyValueFactory<Song, String>("title"));
         lengthColumn.setCellValueFactory(new PropertyValueFactory<Song, String>("length"));
         table.setItems(Songs);
-        table.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
+        table.getStylesheets().add(getClass().getResource("/com/example/musicplayer/style.css").toExternalForm());
 
         // Play the first song
         currentlyPlayingSong = Songs.iterator().next();
@@ -130,18 +128,35 @@ public class Controller implements Initializable {
 
     private void initializeSlider() {
         logger.info("Initializing slider for: " + currentlyPlayingSong.getTitle());
+
+        // initialize min and max
         slider.setMin(0);
         slider.setMax(player.getTotalDuration().toSeconds());
 
+        // initialize dragged property
         slider.valueProperty().addListener((observableValue, number, t1) -> {
             if (slider.isValueChanging()) {
-                logger.info("slider changed");
+                logger.info("slider dragged");
                 int currentMediaTimeInSeconds = (int) slider.getValue();
                 logger.info("value: " + currentMediaTimeInSeconds);
                 player.seek(Duration.seconds(currentMediaTimeInSeconds));
                 timeElapsedLabel.setText(convertAndFormatTime(currentMediaTimeInSeconds));
                 timeRemainingLabel.setText(convertAndFormatTime(player.getMedia().getDuration().toSeconds() - currentMediaTimeInSeconds));
             }
+        });
+
+        // initialize on click property
+        slider.setOnMouseClicked(mouseEvent -> {
+            logger.info("slider clicked");
+
+            double value = (mouseEvent.getX()/slider.getWidth()) * slider.getMax();
+            slider.setValue(value);
+
+            int currentMediaTimeInSeconds = (int) slider.getValue();
+            logger.info("value: " + currentMediaTimeInSeconds);
+            player.seek(Duration.seconds(currentMediaTimeInSeconds));
+            timeElapsedLabel.setText(convertAndFormatTime(currentMediaTimeInSeconds));
+            timeRemainingLabel.setText(convertAndFormatTime(player.getMedia().getDuration().toSeconds() - currentMediaTimeInSeconds));
         });
     }
 
