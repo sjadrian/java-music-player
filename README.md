@@ -13,6 +13,7 @@ As a passionate coder and music enthusiast, I decided to combine my interests by
   
    
 ## Screenshots
+![JavaMp3PlayerScreenShot](https://github.com/sjadrian/java-music-player/assets/93874977/3402890c-a8b8-403f-91da-64fe9b55d22d)
 
 
 ## Future Plan
