@@ -6,6 +6,8 @@
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -54,31 +56,52 @@
    </TableView>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
       <children>
-         <Button id="previousButton" fx:id="previousButton" mnemonicParsing="false" prefWidth="115.0" text="Previous">
+         <Button id="previousButton" fx:id="previousButton" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="64.0">
             <font>
                <Font size="14.0" />
-            </font></Button>
-         <Button id="playPauseButton" fx:id="playPauseButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Pause">
+            </font>
+            <graphic>
+               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@icons/previous.png" />
+                  </image>
+               </ImageView>
+            </graphic></Button>
+         <Button id="playPauseButton" fx:id="playPauseButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0">
             <HBox.margin>
                <Insets left="8.0" right="8.0" />
             </HBox.margin>
             <font>
                <Font size="14.0" />
-            </font></Button>
-         <Button id="nextButton" fx:id="nextButton" mnemonicParsing="false" prefWidth="115.0" text="Next">
+            </font>
+            <graphic>
+               <ImageView fx:id="playPauseImage" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@icons/pause.png" />
+                  </image>
+               </ImageView>
+            </graphic></Button>
+         <Button id="nextButton" fx:id="nextButton" alignment="CENTER" mnemonicParsing="false" prefHeight="55.0" prefWidth="77.0">
             <font>
                <Font size="14.0" />
-            </font></Button>
+            </font>
+            <graphic>
+               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@icons/next.png" />
+                  </image>
+               </ImageView>
+            </graphic></Button>
       </children>
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
       <children>
-         <Button id="loopButton" fx:id="loopButton" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Loop: OFF">
+         <Button id="loopButton" fx:id="loopButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Loop: OFF">
             <font>
                <Font size="16.0" />
             </font></Button>
          <Pane id="spacer" fx:id="spacer" prefHeight="44.0" prefWidth="327.0" />
-         <Button id="shuffleButton" fx:id="shuffleButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Shuffle">
+         <Button id="shuffleButton" fx:id="shuffleButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Shuffle">
             <font>
                <Font size="16.0" />
             </font></Button>

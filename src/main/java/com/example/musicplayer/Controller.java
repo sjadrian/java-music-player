@@ -7,6 +7,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
 import java.net.URL;
+
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.util.Duration;
 import java.util.*;
 
@@ -49,6 +52,8 @@ public class Controller implements Initializable {
     private Label timeRemainingLabel;
     @FXML
     private Slider slider;
+    @FXML
+    private ImageView playPauseImage;
 
     private MediaPlayer player;
     private Song currentlyPlayingSong;
@@ -57,8 +62,7 @@ public class Controller implements Initializable {
     private boolean isLooping = false;
 
     // get all songs
-    LinkedHashMap<String, Song> allSongs = new SongRepository().fetchData();
-    ArrayList<Song> songsList = new ArrayList<>(allSongs.values());
+    ArrayList<Song> songsList = new SongRepository().fetchDataList();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -232,12 +236,11 @@ public class Controller implements Initializable {
 
         if (!isPlaying) {
             player.pause();
-            playPauseButton.setText("Play");
-
+            playPauseImage.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream("icons/play.png"))));
             logger.info("song is paused");
         } else {
             player.play();
-            playPauseButton.setText("Pause");
+            playPauseImage.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream("icons/pause.png"))));
             logger.info("song is resumed");
         }
     }
