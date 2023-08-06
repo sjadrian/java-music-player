@@ -73,8 +73,8 @@ public class Controller implements Initializable {
         ObservableList<Song> Songs = FXCollections.observableArrayList();
         Songs.addAll(songsList);
 
-        titleColumn.setCellValueFactory(new PropertyValueFactory<Song, String>("title"));
-        lengthColumn.setCellValueFactory(new PropertyValueFactory<Song, String>("length"));
+        titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
+        lengthColumn.setCellValueFactory(new PropertyValueFactory<>("length"));
         table.setItems(Songs);
         table.getStylesheets().add(getClass().getResource("/com/example/musicplayer/style.css").toExternalForm());
 
