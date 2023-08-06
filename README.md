@@ -8,8 +8,9 @@ As a passionate coder and music enthusiast, I decided to combine my interests by
 
 ## Functionalities
 1. Play Music: The player will play your selected song in from the playlist.
-2. Shuffle playlist:  The player will randomly rearranges the playlist.
-3. Loop song: The player will automatically replay the selected song.
+2. Play Previous/Next Song: The previous/next button will play previous/next song from the playlist.
+3. Shuffle playlist: The shuffle button will randomly rearranges the playlist.
+4. Loop song: The loop button will automatically replay the selected song.
   
    
 ## Screenshots
