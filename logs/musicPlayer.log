@@ -9645,3 +9645,246 @@
 2023-08-06 01:09:54 INFO  Controller:160 - Initializing slider
 2023-08-06 01:10:23 INFO  Controller:242 - play/pause button clicked
 2023-08-06 01:10:23 INFO  Controller:250 - song is paused
+2023-08-06 01:12:37 INFO  Controller:80 - Starting the program...
+2023-08-06 01:12:37 INFO  Controller:148 - Playing: Kato - Unravel
+2023-08-06 01:12:37 INFO  Controller:236 - currently playing: Kato - Unravel
+2023-08-06 01:12:37 INFO  Controller:237 - next up: Kato - Gurenge
+2023-08-06 01:12:38 INFO  Controller:160 - Initializing slider
+2023-08-06 01:12:47 INFO  Controller:97 - clicked on: Kato - We Are!
+2023-08-06 01:12:47 INFO  Controller:148 - Playing: Kato - We Are!
+2023-08-06 01:12:47 INFO  Controller:236 - currently playing: Kato - We Are!
+2023-08-06 01:12:47 INFO  Controller:237 - next up: Kato - Unravel
+2023-08-06 01:12:47 INFO  Controller:160 - Initializing slider
+2023-08-06 01:12:49 INFO  Controller:97 - clicked on: Kato - Inferno Lofi (Fire Force)
+2023-08-06 01:12:49 INFO  Controller:148 - Playing: Kato - Inferno Lofi (Fire Force)
+2023-08-06 01:12:49 INFO  Controller:236 - currently playing: Kato - Inferno Lofi (Fire Force)
+2023-08-06 01:12:49 INFO  Controller:237 - next up: Kato - We Are!
+2023-08-06 01:12:49 INFO  Controller:160 - Initializing slider
+2023-08-06 01:12:52 INFO  Controller:97 - clicked on: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 01:12:52 INFO  Controller:148 - Playing: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 01:12:52 INFO  Controller:236 - currently playing: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 01:12:52 INFO  Controller:237 - next up: Kato - Inferno Lofi (Fire Force)
+2023-08-06 01:12:52 INFO  Controller:160 - Initializing slider
+2023-08-06 01:12:55 INFO  Controller:97 - clicked on: Kato - Sparkle Lofi (Your Name)
+2023-08-06 01:12:55 INFO  Controller:148 - Playing: Kato - Sparkle Lofi (Your Name)
+2023-08-06 01:12:55 INFO  Controller:236 - currently playing: Kato - Sparkle Lofi (Your Name)
+2023-08-06 01:12:55 INFO  Controller:237 - next up: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 01:12:55 INFO  Controller:160 - Initializing slider
+2023-08-06 01:12:58 INFO  Controller:97 - clicked on: Kato - Pokémon Theme Lofi
+2023-08-06 01:12:58 INFO  Controller:148 - Playing: Kato - Pokémon Theme Lofi
+2023-08-06 01:12:58 INFO  Controller:236 - currently playing: Kato - Pokémon Theme Lofi
+2023-08-06 01:12:58 INFO  Controller:237 - next up: Kato - Sparkle Lofi (Your Name)
+2023-08-06 01:12:58 INFO  Controller:160 - Initializing slider
+2023-08-06 01:13:02 INFO  Controller:97 - clicked on: Kato - The Hero!! (One Punch Man)
+2023-08-06 01:13:02 INFO  Controller:148 - Playing: Kato - The Hero!! (One Punch Man)
+2023-08-06 01:13:02 INFO  Controller:236 - currently playing: Kato - The Hero!! (One Punch Man)
+2023-08-06 01:13:02 INFO  Controller:237 - next up: Kato - Pokémon Theme Lofi
+2023-08-06 01:13:02 INFO  Controller:160 - Initializing slider
+2023-08-06 01:13:07 INFO  Controller:97 - clicked on: Kato - Leb Deinen Traum (Digimon)
+2023-08-06 01:13:07 INFO  Controller:148 - Playing: Kato - Leb Deinen Traum (Digimon)
+2023-08-06 01:13:07 INFO  Controller:236 - currently playing: Kato - Leb Deinen Traum (Digimon)
+2023-08-06 01:13:07 INFO  Controller:237 - next up: Kato - The Hero!! (One Punch Man)
+2023-08-06 01:13:07 INFO  Controller:160 - Initializing slider
+2023-08-06 01:13:09 INFO  Controller:97 - clicked on: Kato - Blue Bird
+2023-08-06 01:13:09 INFO  Controller:148 - Playing: Kato - Blue Bird
+2023-08-06 01:13:09 INFO  Controller:236 - currently playing: Kato - Blue Bird
+2023-08-06 01:13:09 INFO  Controller:237 - next up: Kato - Leb Deinen Traum (Digimon)
+2023-08-06 01:13:09 INFO  Controller:160 - Initializing slider
+2023-08-06 01:13:11 INFO  Controller:236 - currently playing: Kato - Blue Bird
+2023-08-06 01:13:11 INFO  Controller:237 - next up: Kato - Unravel
+2023-08-06 01:13:13 INFO  Controller:236 - currently playing: Kato - Blue Bird
+2023-08-06 01:13:13 INFO  Controller:237 - next up: Kato - Inferno Lofi (Fire Force)
+2023-08-06 01:13:14 INFO  Controller:236 - currently playing: Kato - Blue Bird
+2023-08-06 01:13:14 INFO  Controller:237 - next up: Kato - Pokémon Theme Lofi
+2023-08-06 01:13:15 INFO  Controller:236 - currently playing: Kato - Blue Bird
+2023-08-06 01:13:15 INFO  Controller:237 - next up: Kato - Gurenge
+2023-08-06 01:15:00 INFO  Controller:236 - currently playing: Kato - Gurenge
+2023-08-06 01:15:00 INFO  Controller:237 - next up: Kato - Inferno Lofi (Fire Force)
+2023-08-06 01:15:00 INFO  Controller:148 - Playing: Kato - Gurenge
+2023-08-06 01:15:00 INFO  Controller:236 - currently playing: Kato - Gurenge
+2023-08-06 01:15:00 INFO  Controller:237 - next up: Kato - Inferno Lofi (Fire Force)
+2023-08-06 01:15:00 INFO  Controller:160 - Initializing slider
+2023-08-06 01:15:08 INFO  Controller:209 - next button clicked
+2023-08-06 01:15:08 INFO  Controller:148 - Playing: Kato - Inferno Lofi (Fire Force)
+2023-08-06 01:15:08 INFO  Controller:236 - currently playing: Kato - Inferno Lofi (Fire Force)
+2023-08-06 01:15:08 INFO  Controller:237 - next up: Kato - Unravel
+2023-08-06 01:15:08 INFO  Controller:160 - Initializing slider
+2023-08-06 01:16:25 INFO  Controller:236 - currently playing: Kato - Unravel
+2023-08-06 01:16:25 INFO  Controller:237 - next up: Kato - We Are!
+2023-08-06 01:16:25 INFO  Controller:148 - Playing: Kato - Unravel
+2023-08-06 01:16:25 INFO  Controller:236 - currently playing: Kato - Unravel
+2023-08-06 01:16:25 INFO  Controller:237 - next up: Kato - We Are!
+2023-08-06 01:16:25 INFO  Controller:160 - Initializing slider
+2023-08-06 01:18:22 INFO  Controller:236 - currently playing: Kato - We Are!
+2023-08-06 01:18:22 INFO  Controller:237 - next up: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 01:18:22 INFO  Controller:148 - Playing: Kato - We Are!
+2023-08-06 01:18:22 INFO  Controller:236 - currently playing: Kato - We Are!
+2023-08-06 01:18:22 INFO  Controller:237 - next up: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 01:18:22 INFO  Controller:160 - Initializing slider
+2023-08-06 01:20:11 INFO  Controller:236 - currently playing: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 01:20:11 INFO  Controller:237 - next up: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 01:20:11 INFO  Controller:148 - Playing: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 01:20:11 INFO  Controller:236 - currently playing: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 01:20:11 INFO  Controller:237 - next up: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 01:20:11 INFO  Controller:160 - Initializing slider
+2023-08-06 14:22:53 INFO  Controller:80 - Starting the program...
+2023-08-06 14:22:53 INFO  Controller:148 - Playing: Kato - Unravel
+2023-08-06 14:22:53 INFO  Controller:236 - currently playing: Kato - Unravel
+2023-08-06 14:22:53 INFO  Controller:237 - next up: Kato - Gurenge
+2023-08-06 14:22:54 INFO  Controller:160 - Initializing slider
+2023-08-06 14:23:12 INFO  Controller:80 - Starting the program...
+2023-08-06 14:23:13 INFO  Controller:148 - Playing: Kato - Unravel
+2023-08-06 14:23:13 INFO  Controller:236 - currently playing: Kato - Unravel
+2023-08-06 14:23:13 INFO  Controller:237 - next up: Kato - Gurenge
+2023-08-06 14:23:13 INFO  Controller:160 - Initializing slider
+2023-08-06 14:28:12 INFO  Controller:80 - Starting the program...
+2023-08-06 14:28:12 INFO  Controller:149 - Playing: Kato - Unravel
+2023-08-06 14:28:12 INFO  Controller:237 - currently playing: Kato - Unravel
+2023-08-06 14:28:13 INFO  Controller:238 - next up: Kato - Gurenge
+2023-08-06 14:28:13 INFO  Controller:161 - Initializing slider
+2023-08-06 14:31:53 INFO  Controller:74 - Starting the program...
+2023-08-06 14:31:54 INFO  Controller:137 - Playing: Kato - Unravel
+2023-08-06 14:31:54 INFO  Controller:225 - currently playing: Kato - Unravel
+2023-08-06 14:31:54 INFO  Controller:226 - next up: Kato - Gurenge
+2023-08-06 14:31:54 INFO  Controller:149 - Initializing slider
+2023-08-06 14:31:55 INFO  Controller:91 - clicked on: Kato - Gurenge
+2023-08-06 14:31:55 INFO  Controller:137 - Playing: Kato - Gurenge
+2023-08-06 14:31:55 INFO  Controller:225 - currently playing: Kato - Gurenge
+2023-08-06 14:31:55 INFO  Controller:226 - next up: Kato - Departure
+2023-08-06 14:31:55 INFO  Controller:149 - Initializing slider
+2023-08-06 14:31:56 INFO  Controller:91 - clicked on: Kato - Departure
+2023-08-06 14:31:56 INFO  Controller:137 - Playing: Kato - Departure
+2023-08-06 14:31:56 INFO  Controller:225 - currently playing: Kato - Departure
+2023-08-06 14:31:56 INFO  Controller:226 - next up: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:31:56 INFO  Controller:149 - Initializing slider
+2023-08-06 14:31:57 INFO  Controller:91 - clicked on: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:31:57 INFO  Controller:137 - Playing: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:31:57 INFO  Controller:225 - currently playing: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:31:57 INFO  Controller:226 - next up: Kato - Blue Bird
+2023-08-06 14:31:57 INFO  Controller:149 - Initializing slider
+2023-08-06 14:31:58 INFO  Controller:91 - clicked on: Kato - Blue Bird
+2023-08-06 14:31:58 INFO  Controller:137 - Playing: Kato - Blue Bird
+2023-08-06 14:31:58 INFO  Controller:225 - currently playing: Kato - Blue Bird
+2023-08-06 14:31:58 INFO  Controller:226 - next up: Kato - Leb Deinen Traum (Digimon)
+2023-08-06 14:31:58 INFO  Controller:149 - Initializing slider
+2023-08-06 14:31:58 INFO  Controller:91 - clicked on: Kato - Leb Deinen Traum (Digimon)
+2023-08-06 14:31:58 INFO  Controller:137 - Playing: Kato - Leb Deinen Traum (Digimon)
+2023-08-06 14:31:58 INFO  Controller:225 - currently playing: Kato - Leb Deinen Traum (Digimon)
+2023-08-06 14:31:58 INFO  Controller:226 - next up: Kato - The Hero!! (One Punch Man)
+2023-08-06 14:31:58 INFO  Controller:149 - Initializing slider
+2023-08-06 14:31:59 INFO  Controller:91 - clicked on: Kato - The Hero!! (One Punch Man)
+2023-08-06 14:31:59 INFO  Controller:137 - Playing: Kato - The Hero!! (One Punch Man)
+2023-08-06 14:31:59 INFO  Controller:225 - currently playing: Kato - The Hero!! (One Punch Man)
+2023-08-06 14:31:59 INFO  Controller:226 - next up: Kato - Pokémon Theme Lofi
+2023-08-06 14:31:59 INFO  Controller:149 - Initializing slider
+2023-08-06 14:32:00 INFO  Controller:91 - clicked on: Kato - Pokémon Theme Lofi
+2023-08-06 14:32:00 INFO  Controller:137 - Playing: Kato - Pokémon Theme Lofi
+2023-08-06 14:32:00 INFO  Controller:225 - currently playing: Kato - Pokémon Theme Lofi
+2023-08-06 14:32:00 INFO  Controller:226 - next up: Kato - Sparkle Lofi (Your Name)
+2023-08-06 14:32:00 INFO  Controller:149 - Initializing slider
+2023-08-06 14:32:00 INFO  Controller:91 - clicked on: Kato - Sparkle Lofi (Your Name)
+2023-08-06 14:32:00 INFO  Controller:137 - Playing: Kato - Sparkle Lofi (Your Name)
+2023-08-06 14:32:00 INFO  Controller:225 - currently playing: Kato - Sparkle Lofi (Your Name)
+2023-08-06 14:32:00 INFO  Controller:226 - next up: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 14:32:00 INFO  Controller:149 - Initializing slider
+2023-08-06 14:32:03 INFO  Controller:91 - clicked on: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 14:32:03 INFO  Controller:137 - Playing: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 14:32:03 INFO  Controller:225 - currently playing: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 14:32:03 INFO  Controller:226 - next up: Kato - Inferno Lofi (Fire Force)
+2023-08-06 14:32:03 INFO  Controller:149 - Initializing slider
+2023-08-06 14:32:05 INFO  Controller:91 - clicked on: Kato - Inferno Lofi (Fire Force)
+2023-08-06 14:32:05 INFO  Controller:137 - Playing: Kato - Inferno Lofi (Fire Force)
+2023-08-06 14:32:05 INFO  Controller:225 - currently playing: Kato - Inferno Lofi (Fire Force)
+2023-08-06 14:32:05 INFO  Controller:226 - next up: Kato - We Are!
+2023-08-06 14:32:05 INFO  Controller:149 - Initializing slider
+2023-08-06 14:32:07 INFO  Controller:91 - clicked on: Kato - We Are!
+2023-08-06 14:32:07 INFO  Controller:137 - Playing: Kato - We Are!
+2023-08-06 14:32:07 INFO  Controller:225 - currently playing: Kato - We Are!
+2023-08-06 14:32:07 INFO  Controller:226 - next up: Kato - Unravel
+2023-08-06 14:32:07 INFO  Controller:149 - Initializing slider
+2023-08-06 14:41:58 INFO  Controller:72 - Starting the program...
+2023-08-06 14:41:58 INFO  Controller:138 - Playing: Kato - Unravel
+2023-08-06 14:41:58 INFO  Controller:223 - currently playing: Kato - Unravel
+2023-08-06 14:41:58 INFO  Controller:224 - next up: Kato - Gurenge
+2023-08-06 14:41:58 INFO  Controller:150 - Initializing slider
+2023-08-06 14:42:00 INFO  Controller:228 - play/pause button clicked
+2023-08-06 14:42:00 INFO  Controller:236 - song is paused
+2023-08-06 14:42:01 INFO  Controller:228 - play/pause button clicked
+2023-08-06 14:42:01 INFO  Controller:240 - song is resumed
+2023-08-06 14:42:04 INFO  Controller:228 - play/pause button clicked
+2023-08-06 14:42:04 INFO  Controller:236 - song is paused
+2023-08-06 14:42:04 INFO  Controller:228 - play/pause button clicked
+2023-08-06 14:42:04 INFO  Controller:240 - song is resumed
+2023-08-06 14:42:06 INFO  Controller:228 - play/pause button clicked
+2023-08-06 14:42:06 INFO  Controller:236 - song is paused
+2023-08-06 14:42:06 INFO  Controller:228 - play/pause button clicked
+2023-08-06 14:42:06 INFO  Controller:240 - song is resumed
+2023-08-06 14:43:56 INFO  Controller:72 - Starting the program...
+2023-08-06 14:43:56 INFO  Controller:142 - Playing: Kato - Unravel
+2023-08-06 14:43:56 INFO  Controller:225 - currently playing: Kato - Unravel
+2023-08-06 14:43:56 INFO  Controller:226 - next up: Kato - Gurenge
+2023-08-06 14:43:57 INFO  Controller:154 - Initializing slider
+2023-08-06 14:44:00 INFO  Controller:211 - previous button clicked
+2023-08-06 14:44:00 INFO  Controller:142 - Playing: Kato - We Are!
+2023-08-06 14:44:00 INFO  Controller:225 - currently playing: Kato - We Are!
+2023-08-06 14:44:00 INFO  Controller:226 - next up: Kato - Unravel
+2023-08-06 14:44:00 INFO  Controller:154 - Initializing slider
+2023-08-06 14:44:03 INFO  Controller:211 - previous button clicked
+2023-08-06 14:44:03 INFO  Controller:142 - Playing: Kato - Inferno Lofi (Fire Force)
+2023-08-06 14:44:03 INFO  Controller:225 - currently playing: Kato - Inferno Lofi (Fire Force)
+2023-08-06 14:44:03 INFO  Controller:226 - next up: Kato - We Are!
+2023-08-06 14:44:03 INFO  Controller:154 - Initializing slider
+2023-08-06 14:47:36 INFO  Controller:72 - Starting the program...
+2023-08-06 14:47:36 INFO  Controller:136 - Playing: Kato - Unravel
+2023-08-06 14:47:36 INFO  Controller:213 - currently playing: Kato - Unravel
+2023-08-06 14:47:36 INFO  Controller:214 - next up: Kato - Gurenge
+2023-08-06 14:47:37 INFO  Controller:148 - Initializing slider
+2023-08-06 14:47:39 INFO  Controller:89 - clicked on: Kato - Gurenge
+2023-08-06 14:47:39 INFO  Controller:136 - Playing: Kato - Gurenge
+2023-08-06 14:47:39 INFO  Controller:213 - currently playing: Kato - Gurenge
+2023-08-06 14:47:39 INFO  Controller:214 - next up: Kato - Departure
+2023-08-06 14:47:39 INFO  Controller:148 - Initializing slider
+2023-08-06 14:47:40 INFO  Controller:89 - clicked on: Kato - Departure
+2023-08-06 14:47:40 INFO  Controller:136 - Playing: Kato - Departure
+2023-08-06 14:47:40 INFO  Controller:213 - currently playing: Kato - Departure
+2023-08-06 14:47:40 INFO  Controller:214 - next up: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:47:40 INFO  Controller:148 - Initializing slider
+2023-08-06 14:47:41 INFO  Controller:89 - clicked on: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:47:41 INFO  Controller:136 - Playing: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:47:41 INFO  Controller:213 - currently playing: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:47:41 INFO  Controller:214 - next up: Kato - Blue Bird
+2023-08-06 14:47:41 INFO  Controller:148 - Initializing slider
+2023-08-06 14:47:42 INFO  Controller:218 - play/pause button clicked
+2023-08-06 14:47:42 INFO  Controller:226 - song is paused
+2023-08-06 14:47:42 INFO  Controller:218 - play/pause button clicked
+2023-08-06 14:47:42 INFO  Controller:230 - song is resumed
+2023-08-06 14:47:43 INFO  Controller:189 - next button clicked
+2023-08-06 14:47:43 INFO  Controller:136 - Playing: Kato - Blue Bird
+2023-08-06 14:47:43 INFO  Controller:213 - currently playing: Kato - Blue Bird
+2023-08-06 14:47:43 INFO  Controller:214 - next up: Kato - Leb Deinen Traum (Digimon)
+2023-08-06 14:47:43 INFO  Controller:148 - Initializing slider
+2023-08-06 14:47:45 INFO  Controller:213 - currently playing: Kato - Blue Bird
+2023-08-06 14:47:45 INFO  Controller:214 - next up: Kato - We Are!
+2023-08-06 14:47:46 INFO  Controller:213 - currently playing: Kato - Blue Bird
+2023-08-06 14:47:46 INFO  Controller:214 - next up: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:47:46 INFO  Controller:213 - currently playing: Kato - Blue Bird
+2023-08-06 14:47:46 INFO  Controller:214 - next up: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:47:46 INFO  Controller:213 - currently playing: Kato - Blue Bird
+2023-08-06 14:47:46 INFO  Controller:214 - next up: Kato - The Day Lofi (My Hero Academia)
+2023-08-06 14:47:47 INFO  Controller:213 - currently playing: Kato - Blue Bird
+2023-08-06 14:47:47 INFO  Controller:214 - next up: Kato - A Cruel Angel-'s Thesis (Evangelion)
+2023-08-06 14:58:35 INFO  Controller:72 - Starting the program...
+2023-08-06 14:58:35 INFO  Controller:124 - Playing: Kato - Unravel
+2023-08-06 14:58:35 INFO  Controller:213 - currently playing: Kato - Unravel
+2023-08-06 14:58:35 INFO  Controller:214 - next up: Kato - Gurenge
+2023-08-06 14:58:36 INFO  Controller:136 - Initializing slider for: Kato - Unravel
+2023-08-06 14:59:43 INFO  Controller:72 - Starting the program...
+2023-08-06 14:59:43 INFO  Controller:124 - Playing: Kato - Unravel
+2023-08-06 14:59:43 INFO  Controller:213 - currently playing: Kato - Unravel
+2023-08-06 14:59:43 INFO  Controller:214 - next up: Kato - Gurenge
+2023-08-06 14:59:44 INFO  Controller:136 - Initializing slider for: Kato - Unravel
+2023-08-06 15:01:07 INFO  Controller:68 - Starting the program...
+2023-08-06 15:01:07 INFO  Controller:120 - Playing: Kato - Unravel
+2023-08-06 15:01:07 INFO  Controller:209 - currently playing: Kato - Unravel
+2023-08-06 15:01:07 INFO  Controller:210 - next up: Kato - Gurenge
+2023-08-06 15:01:08 INFO  Controller:132 - Initializing slider for: Kato - Unravel
