@@ -3,7 +3,7 @@ This is a Java Graphical User Interface (GUI) application designed to plays song
 
 
 ## Background
-As a passionate coder and music enthusiast, I decided to combine my interests by devolping this Java music player.
+As a passionate coder and music enthusiast, I decided to combine my interests by devolping this music player.
 
 
 ## Functionalities
